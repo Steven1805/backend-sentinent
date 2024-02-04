@@ -17,11 +17,11 @@ async function getFeedback(reactionsSummary) {
 
   let feedback = '';
   if (totalScore > 0) {
-      feedback = 'Votre sentiment sur les réseaux sociaux semble plutôt positif ces derniers temps.';
+      feedback = 'Your sentiment on social media seems rather positive lately.';
   } else if (totalScore < 0) {
-      feedback = 'Votre sentiment sur les réseaux sociaux semble plutôt négatif ces derniers temps.';
+      feedback = 'Your sentiment on social media seems rather negative lately.';
   } else {
-      feedback = 'Votre sentiment sur les réseaux sociaux semble neutre ces derniers temps.';
+      feedback = 'Your sentiment on social media seems neutral lately.';
   }
 
   return { totalScore, feedback };
