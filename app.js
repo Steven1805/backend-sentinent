@@ -1,8 +1,12 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
-const port = 3000;
-const analyzeSentiment = require('./modules/analyze-sentiment')
+const port = 4000;
+const analyzeSentiment = require('./modules/analyze-sentiment');
 require('dotenv').config();
+
+// Utiliser le middleware cors
+app.use(cors());
 
 app.get('/feed-back', async (req, res) => {
   try {
@@ -11,6 +15,12 @@ app.get('/feed-back', async (req, res) => {
       return res.status(400).json({ error: 'Tous les paramètres nécessaires ne sont pas fournis.' });
     }
     const result = await analyzeSentiment(userId, accessToken, limit);
+
+    // Configurer les en-têtes CORS dans la réponse
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+
     res.json(result);
   } catch (error) {
     console.error(error);
