@@ -19,9 +19,10 @@ cd backend-sentinent/
     
 4. Create a `.env` file in the project root.
 
-5. Inside the `.env` file, add your Gemini API key as `API_KEY=`.\
+5. Inside the `.env` file, add your Gemini API key as `API_KEY=` and add the port you want to use as `PORT=`
 ```plaintext
 API_KEY=YOUR_GEMINI_API_KEY
+PORT=YOUR_PORT
 ```
 6. Install dependencies
  ```bash
