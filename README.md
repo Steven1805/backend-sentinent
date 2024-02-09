@@ -59,3 +59,8 @@ To run ESLint and automatically fix all fixable errors, use the following comman
 ```bash
 npx eslint . --fix
 ```
+
+## Deployment
+
+The Sentiment Detector application is deployed on [Vercel](https://vercel.com/). You can access the deployed version of the application [here](https://backend-sentinent.vercel.app/feed-back).
+
