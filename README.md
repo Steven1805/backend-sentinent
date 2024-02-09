@@ -53,3 +53,9 @@ Receive feedback based on the reactions to each post and the sentiment analysis 
 This project follows strict coding standards to ensure consistency and maintainability. We use ESLint, a JavaScript linter, to analyze our code for potential errors, stylistic inconsistencies, and code smells. ESLint helps us maintain a high level of code quality by enforcing best practices and coding standards.
 
 To maintain consistent code quality, we recommend running ESLint before committing your changes to the repository. You can find our ESLint configuration in the `.eslintrc.js` file.
+
+To run ESLint and automatically fix all fixable errors, use the following command:
+
+```bash
+npx eslint . --fix
+```
