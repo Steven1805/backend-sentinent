@@ -1,4 +1,4 @@
-import generateEmotionsSummary from './emotion-summary.js';
+import generateEmotionsSummary from '../modules/emotion-summary.js';
 
 describe('generateEmotionsSummary', () => {
   test('should generate emotions summary for provided posts', async () => {

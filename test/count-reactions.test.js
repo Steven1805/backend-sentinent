@@ -1,4 +1,4 @@
-import countReactions from './count-reactions.js';
+import countReactions from '../modules/count-reactions.js';
 
 describe('countReactions', () => {
   test('should count reactions from a list of posts', async () => {

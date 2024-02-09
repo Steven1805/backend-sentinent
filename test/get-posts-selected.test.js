@@ -1,4 +1,4 @@
-import getPostsSelected from './get-posts-selected.js';
+import getPostsSelected from '../modules/get-posts-selected.js';
 import FB from 'fb';
 
 // Mocking FB.setAccessToken

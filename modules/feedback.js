@@ -25,7 +25,7 @@ async function getFeedback(reactionsSummary) {
 
   let feedback = '';
   if (totalScore > 0) {
-    feedback = 'Your sentiment score is influence by the types and quantity '+
+    feedback = 'Your sentiment score is influenced by the types and quantity '+
                 'of reactions on your posts. '+
                 'Your positive interactions outweigh the negative ones, '+
                 'your posts are radiating positivity! '+

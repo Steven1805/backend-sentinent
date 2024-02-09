@@ -5,7 +5,7 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "start test",
+    "test": "jest",
     "start": "node app.js"
   },
   "author": "",
@@ -23,11 +23,19 @@
     "fb": "^2.0.0"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.23.9",
+    "babel-jest": "^29.7.0",
     "eslint": "^8.56.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-promise": "^6.1.1"
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
   }
 }

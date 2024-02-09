@@ -1,4 +1,4 @@
-import generateEmotionsSummary from './emotion-summary.js';
+import generateEmotionsSummary from '../modules/emotion-summary.js';
 
 // Mocking GoogleGenerativeAI class
 jest.mock('@google/generative-ai', () => {
